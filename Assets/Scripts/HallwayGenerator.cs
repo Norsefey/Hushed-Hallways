@@ -68,8 +68,8 @@ public class HallwayGenerator : MonoBehaviour
             for (int y = 0; y < size.y; y++)
             {
                 Cell currentCell = board[Mathf.FloorToInt(x + y * size.x)];
-                if (currentCell.visited)
-                {
+                /*if (currentCell.visited)
+                {*/
                     int index = -1;//index that deceides what hallway to spawn in
                     List<int> avaibleHallways = new List<int>();//will hold all types hallways that can spawn at this location
                     
@@ -109,23 +109,8 @@ public class HallwayGenerator : MonoBehaviour
                     newHall.name += ": " + x + "x " + y + "y";
                    
                     
-                }
+                //}
 
-                /*if (counter == goalPos)
-                {
-                    var newHall = Instantiate(plushieHall, new Vector3(x * offset.x, 0, -y * offset.y), Quaternion.identity, transform).GetComponent<HallManager>();
-                    newHall.UpdateWalls(board[Mathf.FloorToInt(x + y * size.x)].openDirections);
-
-                    newHall.name += ": " + x + "x " + y + "y";
-                }
-                else
-                {
-                    var newHall = Instantiate(defaultHallway, new Vector3(x * offset.x, 0, -y * offset.y), Quaternion.identity, transform).GetComponent<HallManager>();
-                    newHall.UpdateWalls(board[Mathf.FloorToInt(x + y * size.x)].openDirections);
-
-                    newHall.name += ": " + x + "x " + y + "y"; 
-                }
-                    counter++;*/
             }
         }
     }
@@ -153,10 +138,10 @@ public class HallwayGenerator : MonoBehaviour
 
             board[currentCell].visited = true;
 
-            if (currentCell == board.Count - 1)//helps with runtime//adds more interesting shape to maze
+            /*if (currentCell == board.Count - 1)//helps with runtime//adds more interesting shape to maze
             {
                 break;
-            }
+            }*/
 
 
             //check Neighbors
