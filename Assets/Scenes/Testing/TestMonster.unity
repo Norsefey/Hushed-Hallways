@@ -175,6 +175,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hushed
       objectReference: {fileID: 0}
+    - target: {fileID: 2550054767454890476, guid: e2d33dd6c2a7d474b87c1678556d25e8, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2662c180117eb7745983fc4cc79711a4, type: 2}
     - target: {fileID: 5866666021909216657, guid: e2d33dd6c2a7d474b87c1678556d25e8, type: 3}
       propertyPath: m_Controller
       value: 
