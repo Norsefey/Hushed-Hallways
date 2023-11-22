@@ -9,13 +9,24 @@ public class WallOverlapManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Collider[] overlapedColliders = Physics.OverlapSphere(transform.position, 1f);//get colliders overlaping wall
+        Collider[] overlapedColliders = Physics.OverlapSphere(transform.position, .01f);//get colliders overlaping wall
 
         foreach (Collider col in overlapedColliders)
         {
-            if(col.CompareTag("Overlapping")) Destroy(gameObject);
+          
+            if (col.tag == "Overlapping")
+            {
+                Debug.Log("Destroyed" + col.name);
 
+                Destroy(gameObject);
+                return;
+            }
+                
+            
+           
         }
+
+        GetComponent<Collider>().enabled = true;
     }
 
     
