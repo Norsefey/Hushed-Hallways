@@ -7,11 +7,8 @@ public class FlashLight : MonoBehaviour
     [SerializeField]//refrence to flashlight
     private GameObject flashlight;
 
-    private bool flashOn = false;
-    // Start is called before the first frame update
-   
-    
-
+    private bool flashOn = true;
+  
     // Update is called once per frame
     void Update()
     {
