@@ -1,0 +1,848 @@
+fileFormatVersion: 2
+guid: 37bc63aeccd756b4ca86bbbf16fa5d88
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Owen2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2632.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02e5a19b49d0faf4fbb6f8c7dd1532cd
+      internalID: 1617342210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_1
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 2632.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d344bae213901e47ab9a8f384b1ce81
+      internalID: -525950636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_2
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 2632.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f018a448539f2d245b25b4c9ce1bfc09
+      internalID: -1680032605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_3
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 2632.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f89c806a525a4e3458f5ee079546937f
+      internalID: -1049553162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_4
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 2632.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c4edf2e4333f8d449906cecf03dc664
+      internalID: 1529955733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_5
+      rect:
+        serializedVersion: 2
+        x: 5850
+        y: 2632.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e46077e31d9ad4418f2766abd003629
+      internalID: 963523246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_6
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 2632.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77e02d937f29eac4bb5891caafdbb571
+      internalID: -1827091983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1974.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eb2f165fe0ac9949a6f6baa0b96b22d
+      internalID: 63828910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_8
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1974.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994ad4086f200954c9f0e2cba2acf6bf
+      internalID: -845077979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_9
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 1974.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af6642aa94bb1e443a7b10c6ab0c9e46
+      internalID: 380248406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_10
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 1974.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c568b2f9403b9248ba8fd4aabfa950a
+      internalID: -475398490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_11
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 1974.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c05bd99a5105af4b82ba7cdd3432063
+      internalID: 1336599358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_12
+      rect:
+        serializedVersion: 2
+        x: 5850
+        y: 1974.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91323ea60bca9484993dd35f0cf310a2
+      internalID: -1961903352
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_13
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 1974.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7815ea2d84af9f428c7c4d9addd41e1
+      internalID: 1596855252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1316.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514c9420da3751145b63f947b8dbc766
+      internalID: 775407982
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_15
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 1316.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf36d97696cc28743a3c85abbfcc14d7
+      internalID: -1895176799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_16
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 1316.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79c0a0a3aea737c439e9f9fb27896a5f
+      internalID: 1306572084
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_17
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 1316.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13ad801836c722d4aa89580629d38aa9
+      internalID: 2069774638
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_18
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 1316.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 057aad3e7b7ad3a43b04e9760e20214d
+      internalID: 1199905608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_19
+      rect:
+        serializedVersion: 2
+        x: 5850
+        y: 1316.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fbbb95cac7757b48adee9b3f60ac16d
+      internalID: 1716969512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_20
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 1316.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c5507034fef6e14c9d89d0006a16433
+      internalID: -805796554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_21
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 658.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72dcf361e858524f8dd02b516d8c531
+      internalID: -1152189558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_22
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 658.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32255e5d6dd5d484fa39d661da863d99
+      internalID: 25164391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_23
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 658.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e97afb87a6b410646937022b13da09f5
+      internalID: -1071376685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_24
+      rect:
+        serializedVersion: 2
+        x: 3510
+        y: 658.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19cf6f9ce786fcf43a9ce5cdf879ad78
+      internalID: 575641499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_25
+      rect:
+        serializedVersion: 2
+        x: 4680
+        y: 658.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac3917f2c41d4cb4eb22a8e9e68c99be
+      internalID: 1671914502
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_26
+      rect:
+        serializedVersion: 2
+        x: 5850
+        y: 658.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32f9a68e57ada84e865a2be1fe51df0
+      internalID: -827450070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_27
+      rect:
+        serializedVersion: 2
+        x: 7020
+        y: 658.8
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef80acc0adb11564bb9442037353043d
+      internalID: -1169609476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.7999878
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49e484603ec9c01468cd173d615da4a1
+      internalID: -714712689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_29
+      rect:
+        serializedVersion: 2
+        x: 1170
+        y: 0.7999878
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8705d76b43165034694fe4697be1045a
+      internalID: 1962769429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Owen2_30
+      rect:
+        serializedVersion: 2
+        x: 2340
+        y: 0.7999878
+        width: 1170.2858
+        height: 658.2
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab20e948664861438bb4d627230f573
+      internalID: -206847162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: ee1421b467d505d48b4fc530d645542f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Owen2_0: 1617342210
+      Owen2_1: -525950636
+      Owen2_10: -475398490
+      Owen2_11: 1336599358
+      Owen2_12: -1961903352
+      Owen2_13: 1596855252
+      Owen2_14: 775407982
+      Owen2_15: -1895176799
+      Owen2_16: 1306572084
+      Owen2_17: 2069774638
+      Owen2_18: 1199905608
+      Owen2_19: 1716969512
+      Owen2_2: -1680032605
+      Owen2_20: -805796554
+      Owen2_21: -1152189558
+      Owen2_22: 25164391
+      Owen2_23: -1071376685
+      Owen2_24: 575641499
+      Owen2_25: 1671914502
+      Owen2_26: -827450070
+      Owen2_27: -1169609476
+      Owen2_28: -714712689
+      Owen2_29: 1962769429
+      Owen2_3: -1049553162
+      Owen2_30: -206847162
+      Owen2_4: 1529955733
+      Owen2_5: 963523246
+      Owen2_6: -1827091983
+      Owen2_7: 63828910
+      Owen2_8: -845077979
+      Owen2_9: 380248406
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
