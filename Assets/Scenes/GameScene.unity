@@ -276,6 +276,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1016475984}
   - component: {fileID: 1016475983}
+  - component: {fileID: 1016475985}
   m_Layer: 0
   m_Name: Generator
   m_TagString: Untagged
@@ -334,6 +335,20 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1016475985
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1016475982}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e9aa285ad4b55744db2515b18c465f55, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  MonsterPrefab: {fileID: 9039846118477930124, guid: 5514b6ad921633d4c874ba82b1e21ce5, type: 3}
+  SpawnDistance: 10
 --- !u!1001 &1319625179
 PrefabInstance:
   m_ObjectHideFlags: 0

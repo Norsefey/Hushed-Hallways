@@ -1,8 +1,6 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Collectables : MonoBehaviour
+public class Collectibles : MonoBehaviour
 {
     public int plushiesCollected = 0;
 
@@ -12,6 +10,7 @@ public class Collectables : MonoBehaviour
         {
             plushiesCollected++;
             Destroy(other.gameObject);
+            if (plushiesCollected == 1) SpawnMonster.Spawn(); // Spawn monster when first plushie is collected
         }
     }
 }
