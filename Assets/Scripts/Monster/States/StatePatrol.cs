@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
 /// Patrolling behaviour, moves to a new node, waits, then exits state
@@ -7,8 +5,9 @@ using UnityEngine;
 public class StatePatrol : State
 {
     [SerializeField] private float SensingRange = 4f; // Range at which the monster can see the player
-    protected override void EnterState()
+    public override void EnterState()
     {
+        base.EnterState();
         // Set sphere collider to sensing range
         GetComponent<SphereCollider>().radius = SensingRange;
         // Set destination to new position
@@ -16,10 +15,12 @@ public class StatePatrol : State
     }
     public override void UpdateState()
     {
-        return;
+        // If we're close enough to the destination, exit state
+        if (Vector3.Distance(transform.position, Monster.agent.destination) < Monster.agent.stoppingDistance) ExitState();
     }
-    protected override void ExitState()
+    public override void ExitState()
     {
+        base.ExitState();
         // Reset sphere collider
         GetComponent<SphereCollider>().radius = 0.5f;
     }

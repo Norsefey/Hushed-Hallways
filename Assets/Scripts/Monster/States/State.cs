@@ -10,20 +10,15 @@ public abstract class State : MonoBehaviour
     {
         Monster = GetComponent<Monster>();
     }
-    protected virtual void EnterState()
+    public virtual void EnterState()
     {
         Debug.Log("Entering state: " + GetType().Name);
         Monster.agent.speed = BaseStateSpeed;
     }
     public abstract void UpdateState();
-    protected virtual void ExitState()
+    public virtual void ExitState()
     {
         Debug.Log("Exiting state: " + GetType().Name);
-    }
-    public void ChangeState(State newState)
-    {
-        Monster.CurrentState.ExitState();
-        Monster.CurrentState = newState;
-        Monster.CurrentState.EnterState();
+        Monster.CurrentState = null; // Reset current state
     }
 }

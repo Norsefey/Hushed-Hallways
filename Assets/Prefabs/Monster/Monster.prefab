@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 5548516049821068478}
   - component: {fileID: 5221252186353594199}
   - component: {fileID: 8618590686523544068}
+  - component: {fileID: 5922362079552294029}
+  - component: {fileID: 2341561287790630367}
+  - component: {fileID: 1970218630478182820}
   m_Layer: 0
   m_Name: Monster
   m_TagString: Monster
@@ -44,12 +47,12 @@ NavMeshAgent:
   m_GameObject: {fileID: 9039846118477930124}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 1
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
-  m_StoppingDistance: 0.5
+  m_StoppingDistance: 1
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
@@ -86,12 +89,58 @@ SphereCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
   m_Radius: 1
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5922362079552294029
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9039846118477930124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65f27fc1e3333df4caef09ab0c2bbb1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseStateSpeed: 6
+  MinChaseTimer: 5
+  MaxChaseTimer: 10
+  AttackRange: 2
+--- !u!114 &2341561287790630367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9039846118477930124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f5fc7112caac64aa2a2accd7c1679a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseStateSpeed: 2
+  SensingRange: 8
+  MinIdleTimer: 2
+  MaxIdleTimer: 5
+--- !u!114 &1970218630478182820
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9039846118477930124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d8a62713700e273418dc4aead03b8d27, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BaseStateSpeed: 4
+  SensingRange: 4
 --- !u!1001 &6731310536895786737
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
 /// State for chasing the player
@@ -11,8 +10,9 @@ public class StateChase : State
     float ChaseTimer => Random.Range(MinChaseTimer, MaxChaseTimer); // Random time before giving up chase
     [Tooltip("Distance at which the monster will attack the player")]
     [SerializeField] float AttackRange = 2f; // Distance at which the monster will attack
-    protected override void EnterState()
+    public override void EnterState()
     {
+        base.EnterState();
         StartCoroutine(ChaseTimerCoroutine()); // Start timer
     }
     public override void UpdateState()
@@ -20,7 +20,7 @@ public class StateChase : State
         // Set player as destination
         Monster.agent.SetDestination(Player.Instance.transform.position);
         // Reduce speed as we get closer
-        Monster.agent.speed = Mathf.Lerp(BaseStateSpeed, 0, Vector3.Distance(transform.position, Player.Instance.transform.position) / AttackRange);
+        //Monster.agent.speed = Mathf.Lerp(BaseStateSpeed, 1, Vector3.Distance(transform.position, Player.Instance.transform.position) / AttackRange);
         // If player is close enough, attack
         if (Vector3.Distance(transform.position, Player.Instance.transform.position) < AttackRange)
         {
@@ -30,8 +30,10 @@ public class StateChase : State
     }
     IEnumerator ChaseTimerCoroutine()
     {
+        Debug.Log("Monster while give up in " + ChaseTimer + " seconds");
         // Wait for timer to expire
         yield return new WaitForSeconds(ChaseTimer);
+        Debug.Log("Giving up chase");
         // Give up chase
         ExitState();
     }
