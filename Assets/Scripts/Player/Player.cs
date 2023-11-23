@@ -5,6 +5,7 @@ using UnityEngine;
 public class Player : MonoBehaviour
 {
     public static Player Instance { get; private set; }
+    public int Health = 3;
     private void Awake()
     {
         #region Singleton
@@ -12,13 +13,11 @@ public class Player : MonoBehaviour
         else Debug.LogError("Too many players in scene");
         #endregion
     }
-    private void OnTriggerEnter(Collider other)
+    public void TakeDamage()
     {
-        if (other.CompareTag("Monster")) // if the player is attacked by the monster
-        {
-            Debug.Log("Player attacked by monster");
-            Destroy(gameObject); // destroy the player
-        }
+        Debug.Log("Player taking damage");
+        Health--;
+        if (Health <= 0) Destroy(gameObject);
     }
     private void OnDestroy()
     {

@@ -62,7 +62,7 @@ public class HallwayGenerator : MonoBehaviour
 
     void GenerateHalls()
     {
-     
+
         for (int x = 0; x < size.x; x++)
         {
             for (int y = 0; y < size.y; y++)
@@ -102,17 +102,19 @@ public class HallwayGenerator : MonoBehaviour
                         }
                     }
 
-                    var newHall = Instantiate(hallways[index].hallway, new Vector3(x * offset.x, 0, -y * offset.y), Quaternion.identity, transform).GetComponent<HallManager>();
-                    newHall.UpdateWalls(currentCell.openDirections);
+                var newHall = Instantiate(hallways[index].hallway, new Vector3(x * offset.x, 0, -y * offset.y), Quaternion.identity, transform).GetComponent<HallManager>();
+                newHall.UpdateWalls(currentCell.openDirections);
 
 
-                    newHall.name += ": " + x + "x " + y + "y";
-                   
+                newHall.name += ": " + x + "x " + y + "y";
+                    
                     
                 //}
 
             }
         }
+        // Call Leeman's baking script
+        BakeNavMesh.Bake();
     }
 
     void MazeGenerator()
