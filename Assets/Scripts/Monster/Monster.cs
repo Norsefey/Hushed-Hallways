@@ -17,11 +17,11 @@ public class Monster : MonoBehaviour
     private void Awake()
     {
         agent = GetComponent<NavMeshAgent>(); // get reference
-        BaseSpeed--; // Decrement because we increment on spawn
     }
     private void Start()
     {
         Debug.Log("Monster can not chase for 8 seconds");
+        BaseSpeed--; // Reduce base speed by 1 because we increment on spawn
         Invoke(nameof(AllowChasing), GracePeriod);
     }
     private void Update()
