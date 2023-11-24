@@ -5,7 +5,8 @@ using UnityEngine;
 public abstract class State : MonoBehaviour
 {
     protected Monster Monster;
-    [SerializeField] protected float BaseStateSpeed;
+    [Tooltip("Speed to be added to the monster's base speed when entering this state")]
+    [SerializeField] protected float StateSpeedModifier;
     private void Awake()
     {
         Monster = GetComponent<Monster>();
@@ -13,7 +14,7 @@ public abstract class State : MonoBehaviour
     public virtual void EnterState()
     {
         Debug.Log("Entering state: " + GetType().Name);
-        Monster.agent.speed = BaseStateSpeed;
+        Monster.agent.speed = Monster.BaseSpeed += StateSpeedModifier;
     }
     public abstract void UpdateState();
     public virtual void ExitState()

@@ -4,7 +4,7 @@ using UnityEngine;
 /// </summary>
 public class StatePatrol : State
 {
-    [SerializeField] private float SensingRange = 4f; // Range at which the monster can see the player
+    [SerializeField] private float SensingRange = 6f; // Range at which the monster can see the player
     public override void EnterState()
     {
         base.EnterState();

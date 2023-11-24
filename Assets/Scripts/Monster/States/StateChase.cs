@@ -10,6 +10,7 @@ public class StateChase : State
     float ChaseTimer => Random.Range(MinChaseTimer, MaxChaseTimer); // Random time before giving up chase
     [Tooltip("Distance at which the monster will attack the player")]
     [SerializeField] float AttackRange = 2f; // Distance at which the monster will attack
+    [HideInInspector] public Transform PlayerTransform = null;
     public override void EnterState()
     {
         base.EnterState();
@@ -18,11 +19,11 @@ public class StateChase : State
     public override void UpdateState()
     {
         // Set player as destination
-        Monster.agent.SetDestination(Player.Instance.transform.position);
+        Monster.agent.SetDestination(PlayerTransform.position);
         // Reduce speed as we get closer
         //Monster.agent.speed = Mathf.Lerp(BaseStateSpeed, 1, Vector3.Distance(transform.position, Player.Instance.transform.position) / AttackRange);
         // If player is close enough, attack
-        if (Vector3.Distance(transform.position, Player.Instance.transform.position) < AttackRange)
+        if (Vector3.Distance(transform.position, PlayerTransform.position) < AttackRange)
         {
             Player.Instance.TakeDamage();
             ExitState();

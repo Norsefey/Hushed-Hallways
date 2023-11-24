@@ -74,6 +74,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   agent: {fileID: 5548516049821068478}
+  GracePeriod: 8
   CurrentState: {fileID: 0}
 --- !u!135 &8618590686523544068
 SphereCollider:
@@ -108,10 +109,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65f27fc1e3333df4caef09ab0c2bbb1b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseStateSpeed: 6
+  StateSpeedModifier: 2
   MinChaseTimer: 5
   MaxChaseTimer: 10
-  AttackRange: 2
+  AttackRange: 1
+  PlayerTransform: {fileID: 0}
 --- !u!114 &2341561287790630367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -124,8 +126,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f5fc7112caac64aa2a2accd7c1679a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseStateSpeed: 2
-  SensingRange: 8
+  StateSpeedModifier: 0
+  SensingRange: 10
   MinIdleTimer: 2
   MaxIdleTimer: 5
 --- !u!114 &1970218630478182820
@@ -140,8 +142,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a62713700e273418dc4aead03b8d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BaseStateSpeed: 4
-  SensingRange: 4
+  StateSpeedModifier: -2
+  SensingRange: 8
 --- !u!114 &8029171712601210945
 MonoBehaviour:
   m_ObjectHideFlags: 0

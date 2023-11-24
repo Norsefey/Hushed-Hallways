@@ -15,21 +15,22 @@ public class StateIdle : State
         base.EnterState();
         // Set Monster's collider radius to sensing range
         GetComponent<SphereCollider>().radius = SensingRange;
-        CanAct = false;
-        StartCoroutine(IdleTimerCoroutine());
+        if (!CanAct) StartCoroutine(IdleTimerCoroutine());
     }
     public override void UpdateState()
     {
-        if (!CanAct) return; // If can't act, do nothing
-
-        // 70% chance to do nothing
-        if (Random.Range(0, 100) < 70) Debug.Log("Monster is idle");
-        // 30% chance to patrol
+        // If can't act, do nothing
+        if (!CanAct) return;
+        // 50% chance to do nothing
+        if (Random.Range(0, 100) < 50) Debug.Log("Monster is idle");
+        // 50% chance to patrol
         else Monster.ChangeState(GetComponent<StatePatrol>());
     }
     public override void ExitState()
     {
         base.ExitState();
+        // Reset CanAct bool
+        CanAct = false;
         // Reset Monster's collider radius
         GetComponent<SphereCollider>().radius = 0.5f;
     }
