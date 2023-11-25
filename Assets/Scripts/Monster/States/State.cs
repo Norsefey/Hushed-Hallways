@@ -14,7 +14,7 @@ public abstract class State : MonoBehaviour
     public virtual void EnterState()
     {
         Debug.Log("Entering state: " + GetType().Name);
-        Monster.agent.speed = Monster.BaseSpeed += StateSpeedModifier;
+        Monster.agent.speed = Monster.BaseSpeed + StateSpeedModifier;
     }
     public abstract void UpdateState();
     public virtual void ExitState()

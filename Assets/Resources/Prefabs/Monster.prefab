@@ -126,7 +126,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e0f5fc7112caac64aa2a2accd7c1679a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StateSpeedModifier: 0
+  StateSpeedModifier: 2
   SensingRange: 10
   MinIdleTimer: 2
   MaxIdleTimer: 5
@@ -142,7 +142,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d8a62713700e273418dc4aead03b8d27, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StateSpeedModifier: -2
+  StateSpeedModifier: 2
   SensingRange: 8
 --- !u!114 &8029171712601210945
 MonoBehaviour:

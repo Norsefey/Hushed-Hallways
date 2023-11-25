@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.AI.Navigation;
 using UnityEngine;
 
 public class HallwayGenerator : MonoBehaviour
@@ -48,6 +49,8 @@ public class HallwayGenerator : MonoBehaviour
     
     public List<Cell> board;
 
+    public List<NavMeshSurface> newHalls = new List<NavMeshSurface>();
+
     // Start is called before the first frame update
     void Start()
     {
@@ -68,10 +71,9 @@ public class HallwayGenerator : MonoBehaviour
             for (int y = 0; y < size.y; y++)
             {
                 Cell currentCell = board[Mathf.FloorToInt(x + y * size.x)];
-                /*if (currentCell.visited)
-                {*/
-                    int index = -1;//index that deceides what hallway to spawn in
-                    List<int> avaibleHallways = new List<int>();//will hold all types hallways that can spawn at this location
+               
+                   int index = -1;//index that deceides what hallway to spawn in
+                   List<int> avaibleHallways = new List<int>();//will hold all types hallways that can spawn at this location
                     
                     for(int h = 0; h < hallways.Length; h++)
                     {
@@ -102,19 +104,24 @@ public class HallwayGenerator : MonoBehaviour
                         }
                     }
 
-                var newHall = Instantiate(hallways[index].hallway, new Vector3(x * offset.x, 0, -y * offset.y), Quaternion.identity, transform).GetComponent<HallManager>();
+               var newHall = Instantiate(hallways[index].hallway, new Vector3(x * offset.x, 0, -y * offset.y), Quaternion.identity, transform).GetComponent<HallManager>();
+                
                 newHall.UpdateWalls(currentCell.openDirections);
 
+                newHalls.Add(newHall.ShareMyNavmesh());
 
-                newHall.name += ": " + x + "x " + y + "y";
+               newHall.name += ": " + x + "x " + y + "y";
                     
-                    
-                //}
+                 
+          
 
             }
         }
+
+        foreach (NavMeshSurface surface in newHalls) surface.BuildNavMesh();
+
         // Call Leeman's baking script
-        BakeNavMesh.Bake();
+        //BakeNavMesh.Bake();
     }
 
     void MazeGenerator()
