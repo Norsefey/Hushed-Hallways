@@ -5,6 +5,8 @@ using UnityEngine;
 
 public class HallwayGenerator : MonoBehaviour
 {
+    [SerializeField] GameObject player;
+
     [SerializeField]
     public HallwayRules[] hallways;
     public Vector2 offset;
@@ -95,7 +97,7 @@ public class HallwayGenerator : MonoBehaviour
                         if(avaibleHallways.Count > 0)
                         {
                             index = avaibleHallways[Random.Range(0, avaibleHallways.Count)];
-                            Debug.Log("Spawning Default" + index);
+                            //Debug.Log("Spawning Default" + index);
                         }
                         else
                         {
@@ -119,6 +121,10 @@ public class HallwayGenerator : MonoBehaviour
         }
 
         foreach (NavMeshSurface surface in newHalls) surface.BuildNavMesh();
+
+        //Spawn player after navemesh bake, so monster can track it
+        Instantiate(player, Vector3.zero, Quaternion.identity);
+
 
         // Call Leeman's baking script
         //BakeNavMesh.Bake();

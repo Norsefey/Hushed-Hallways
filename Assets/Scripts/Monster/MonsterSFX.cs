@@ -25,13 +25,13 @@ public class MonsterSFX : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(monsterScript.CurrentState == idle)
+        if(monsterScript.CurrentState == idle)//using refrence to the monster's states, check what state it is in and play the correct animations
         {
             anime.SetBool("isMoving", false);
         }else if(monsterScript.CurrentState == chase || monsterScript.CurrentState == patrol)
         {
             anime.SetBool("isMoving", true);
-            Debug.Log("iosMoving");
+            
         }
     }
 }

@@ -9,7 +9,7 @@ public class Monster : MonoBehaviour
     public NavMeshAgent agent; // Reference to NavMeshAgent component
     public static Transform PrevWaypoint; // Reference to the previous waypoint
     [SerializeField] private float GracePeriod = 8; // How long the monster can't chase the player for
-    public static bool CanChase; // Can the monster chase the player?
+    public static bool CanChase = true; // Can the monster chase the player?
     public State CurrentState = null; // Reference to the current state
     public static float BaseSpeed = 4; // Base speed of the monster
     #endregion
@@ -22,7 +22,7 @@ public class Monster : MonoBehaviour
     {
         Debug.Log("Monster can not chase for 8 seconds");
         BaseSpeed--; // Reduce base speed by 1 because we increment on spawn
-        Invoke(nameof(AllowChasing), GracePeriod);
+        //Invoke(nameof(AllowChasing), GracePeriod);
     }
     private void Update()
     {
