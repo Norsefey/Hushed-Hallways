@@ -11,6 +11,10 @@ public class StateChase : State
     [Tooltip("Distance at which the monster will attack the player")]
     [SerializeField] float AttackRange = 2f; // Distance at which the monster will attack
     [HideInInspector] public Transform PlayerTransform = null;
+
+    [SerializeField]
+    GameObject hushVisual;
+
     public override void EnterState()
     {
         base.EnterState();
@@ -26,6 +30,12 @@ public class StateChase : State
         if (Vector3.Distance(transform.position, PlayerTransform.position) < AttackRange)
         {
             Player.Instance.TakeDamage();
+
+            //after the monster attacks, he disappears//hide his render until he can attack again
+            hushVisual.SetActive(false);
+            Monster.CanChase = false;
+            Monster.Invoke(nameof(Monster.AllowChasing), 8);
+
             ExitState();
         }
     }

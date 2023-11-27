@@ -14,10 +14,20 @@ public class LoadingGame : MonoBehaviour
     [SerializeField]
     private Slider loadingBar;
 
+    [SerializeField]
+    private Image backgroundImage;
+    [SerializeField]
+    private Sprite backgroundImageLoadVersion;
     public void LoadGameScene()
     {
         StartCoroutine(loadAsycScene());
     }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene(0);
+    }
+
 
     IEnumerator loadAsycScene()
     {
@@ -25,6 +35,8 @@ public class LoadingGame : MonoBehaviour
 
         titleCanvas.SetActive(false);
         loadingCanvas.SetActive(true);
+
+        backgroundImage.sprite = backgroundImageLoadVersion;
 
         while (!operation.isDone)
         {

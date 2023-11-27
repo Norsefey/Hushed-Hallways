@@ -12,6 +12,10 @@ public class Monster : MonoBehaviour
     public static bool CanChase = true; // Can the monster chase the player?
     public State CurrentState = null; // Reference to the current state
     public static float BaseSpeed = 4; // Base speed of the monster
+
+    [SerializeField]
+    GameObject hushVisual;
+
     #endregion
     #region Operations
     private void Awake()
@@ -22,7 +26,7 @@ public class Monster : MonoBehaviour
     {
         Debug.Log("Monster can not chase for 8 seconds");
         BaseSpeed--; // Reduce base speed by 1 because we increment on spawn
-        //Invoke(nameof(AllowChasing), GracePeriod);
+        Invoke(nameof(AllowChasing), GracePeriod);
     }
     private void Update()
     {
@@ -62,10 +66,12 @@ public class Monster : MonoBehaviour
         CurrentState = newState;
         CurrentState.EnterState();
     }
-    private void AllowChasing()
+    public void AllowChasing()
     {
         Debug.Log("Monster can now chase");
         CanChase = true;
+
+        hushVisual.SetActive(true);
     }
     #endregion
 }

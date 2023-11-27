@@ -13,6 +13,8 @@ public class StateIdle : State
     public override void EnterState()
     {
         base.EnterState();
+
+
         // Set Monster's collider radius to sensing range
         GetComponent<SphereCollider>().radius = SensingRange;
         if (!CanAct) StartCoroutine(IdleTimerCoroutine());

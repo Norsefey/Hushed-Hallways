@@ -76,6 +76,7 @@ MonoBehaviour:
   agent: {fileID: 5548516049821068478}
   GracePeriod: 8
   CurrentState: {fileID: 0}
+  hushVisual: {fileID: 5884800177407611808}
 --- !u!135 &8618590686523544068
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -114,6 +115,7 @@ MonoBehaviour:
   MaxChaseTimer: 10
   AttackRange: 1.5
   PlayerTransform: {fileID: 0}
+  hushVisual: {fileID: 5884800177407611808}
 --- !u!114 &2341561287790630367
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -225,6 +227,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Hushed
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e2d33dd6c2a7d474b87c1678556d25e8, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 2550054767454890476, guid: e2d33dd6c2a7d474b87c1678556d25e8, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -241,6 +247,11 @@ PrefabInstance:
 --- !u!95 &864971422504899424 stripped
 Animator:
   m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: e2d33dd6c2a7d474b87c1678556d25e8, type: 3}
+  m_PrefabInstance: {fileID: 6731310536895786737}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &5884800177407611808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e2d33dd6c2a7d474b87c1678556d25e8, type: 3}
   m_PrefabInstance: {fileID: 6731310536895786737}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &6548465002837772570 stripped

@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 /// <summary>
 /// Assigned to player, handle being attacked by monster
 /// </summary>
@@ -17,7 +18,11 @@ public class Player : MonoBehaviour
     {
         Debug.Log("Player taking damage");
         Health--;
-        if (Health <= 0) Destroy(gameObject);
+        if (Health <= 0)
+        {
+            SceneManager.LoadScene(3);
+            Destroy(gameObject);
+        }
     }
     private void OnDestroy()
     {
