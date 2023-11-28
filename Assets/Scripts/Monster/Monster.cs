@@ -46,7 +46,7 @@ public class Monster : MonoBehaviour
     private bool LineOfSight() // Use a raycast to see if we have direct line of sight to the player
     {
         Debug.Log("LOS: CHECKING");
-        Vector3 direction = Player.Instance.transform.position - transform.position;
+        Vector3 direction = PlayerHealth.Instance.transform.position - transform.position;
         Ray ray = new(transform.position, direction);
         if (Physics.Raycast(ray, out RaycastHit hit, Mathf.Infinity))
         {

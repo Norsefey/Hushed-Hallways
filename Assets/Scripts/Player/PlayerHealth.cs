@@ -3,9 +3,9 @@ using UnityEngine.SceneManagement;
 /// <summary>
 /// Assigned to player, handle being attacked by monster
 /// </summary>
-public class Player : MonoBehaviour
+public class PlayerHealth : MonoBehaviour
 {
-    public static Player Instance { get; private set; }
+    public static PlayerHealth Instance { get; private set; }
     public int Health = 3;
     private void Awake()
     {

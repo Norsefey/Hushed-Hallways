@@ -6,11 +6,11 @@ public class SpawnMonster : MonoBehaviour
 {
     public static void Spawn()
     {
-        Collider[] colliders = Physics.OverlapSphere(Player.Instance.transform.position, 16);
+        Collider[] colliders = Physics.OverlapSphere(PlayerHealth.Instance.transform.position, 16);
         // Get a random waypoint
         Transform NearbyWaypoint = colliders[Random.Range(0, colliders.Length)].transform;
         // while the waypoint is too close to the player, get a new one
-        while (Vector3.Distance(NearbyWaypoint.position, Player.Instance.transform.position) < 8)
+        while (Vector3.Distance(NearbyWaypoint.position, PlayerHealth.Instance.transform.position) < 8)
         {
             NearbyWaypoint = colliders[Random.Range(0, colliders.Length)].transform;
         }

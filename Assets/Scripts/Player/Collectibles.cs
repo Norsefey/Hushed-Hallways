@@ -3,8 +3,8 @@ using UnityEngine.SceneManagement;
 
 public class Collectibles : MonoBehaviour
 {
-    public int plushiesCollected = 0;
-    public int plushiesNeedToWIn = 3;
+    public static int plushiesCollected = 0;
+    public static int plushiesNeedToWIn = 3;
 
     private void OnTriggerEnter(Collider other)
     {

@@ -366,46 +366,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
-      propertyPath: player
-      value: 
-      objectReference: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
-    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
-      propertyPath: size.x
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
-      propertyPath: size.y
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
-      propertyPath: hallways.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
-      propertyPath: hallways.Array.data[1].hallway
-      value: 
-      objectReference: {fileID: 2910060684686589215, guid: 46dda7cb026620643ac23b4ed553be59, type: 3}
-    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
-      propertyPath: hallways.Array.data[2].hallway
-      value: 
-      objectReference: {fileID: 1151191995616137458, guid: d2a679c019eac2f43a1dadb5da92b06a, type: 3}
-    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
-      propertyPath: hallways.Array.data[3].hallway
-      value: 
-      objectReference: {fileID: 5263380221244447909, guid: 0de45ca0df3015d4aacee3238e3f96de, type: 3}
-    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
-      propertyPath: hallways.Array.data[2].maxPos.x
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
-      propertyPath: hallways.Array.data[2].minPos.x
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
-      propertyPath: hallways.Array.data[2].minPos.y
-      value: 2
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

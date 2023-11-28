@@ -25,11 +25,11 @@ public class StateChase : State
         // Set player as destination
         Monster.agent.SetDestination(PlayerTransform.position);
         // Reduce speed as we get closer
-        //Monster.agent.speed = Mathf.Lerp(BaseStateSpeed, 1, Vector3.Distance(transform.position, Player.Instance.transform.position) / AttackRange);
+        //Monster.agent.speed = Mathf.Lerp(BaseStateSpeed, 1, Vector3.Distance(transform.position, PlayerHealth.Instance.transform.position) / AttackRange);
         // If player is close enough, attack
         if (Vector3.Distance(transform.position, PlayerTransform.position) < AttackRange)
         {
-            Player.Instance.TakeDamage();
+            PlayerHealth.Instance.TakeDamage();
 
             //after the monster attacks, he disappears//hide his render until he can attack again
             hushVisual.SetActive(false);

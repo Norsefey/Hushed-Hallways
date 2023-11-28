@@ -45,30 +45,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3bf86e8216eefb45b84e0f1bcc91e4d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  player: {fileID: 4459864850019384750, guid: 6bacecc4f3df9584198879c73a6b6c36, type: 3}
   hallways:
   - hallway: {fileID: 5263380221244447909, guid: 4103527f0c0b14444a26ae6cca972e16, type: 3}
     minPos: {x: 0, y: 0}
     maxPos: {x: 12, y: 12}
     alwaysSpawn: 0
     spawnedIn: 0
-  - hallway: {fileID: 5263380221244447909, guid: 4fb04b9104e9aa541aa88b779e89800c, type: 3}
+  - hallway: {fileID: 2910060684686589215, guid: 46dda7cb026620643ac23b4ed553be59, type: 3}
     minPos: {x: 3, y: 2}
     maxPos: {x: 3, y: 10}
-    alwaysSpawn: 1
-    spawnedIn: 0
-  - hallway: {fileID: 5263380221244447909, guid: 4fb04b9104e9aa541aa88b779e89800c, type: 3}
-    minPos: {x: 5, y: 5}
-    maxPos: {x: 5, y: 10}
-    alwaysSpawn: 1
-    spawnedIn: 0
-  - hallway: {fileID: 5263380221244447909, guid: 4fb04b9104e9aa541aa88b779e89800c, type: 3}
-    minPos: {x: 9, y: 9}
-    maxPos: {x: 9, y: 10}
     alwaysSpawn: 1
     spawnedIn: 0
   offset: {x: 7.44, y: 7.44}
   size: {x: 10, y: 10}
   startPos: 0
+  newHalls: []
 --- !u!114 &949488839316416981
 MonoBehaviour:
   m_ObjectHideFlags: 0
