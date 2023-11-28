@@ -1116,7 +1116,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2147483647
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &5602056981804676388
 Transform:
   m_ObjectHideFlags: 0
@@ -1322,6 +1322,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: f2efa54cd4f768d43bc5578a7e074e92, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1399,6 +1403,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cd24ea96f8618e84480e5da069628458, type: 3}
       propertyPath: m_TagString
       value: Overlapping
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd24ea96f8618e84480e5da069628458, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1584,6 +1592,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Overlapping
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ac2b3673d32f81349b7db0c199dd7b20, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1666,6 +1678,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 78dd43b5bd32efc4ebc67f6141513ecc, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1743,6 +1759,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cd24ea96f8618e84480e5da069628458, type: 3}
       propertyPath: m_TagString
       value: Overlapping
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd24ea96f8618e84480e5da069628458, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1874,6 +1894,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Overlapping
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd24ea96f8618e84480e5da069628458, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2004,6 +2028,10 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Overlapping
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 68bf95a0bfb914447adf681677451715, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -2081,6 +2109,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: cd24ea96f8618e84480e5da069628458, type: 3}
       propertyPath: m_TagString
       value: Overlapping
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: cd24ea96f8618e84480e5da069628458, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 2147483647
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
