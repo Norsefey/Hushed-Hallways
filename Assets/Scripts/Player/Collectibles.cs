@@ -13,7 +13,7 @@ public class Collectibles : MonoBehaviour
             plushiesCollected++;
             Destroy(other.gameObject);
             if (plushiesCollected == 1) SpawnMonster.Spawn(); // Spawn monster when first plushie is collected
-            else if(plushiesCollected > plushiesNeedToWIn) SceneManager.LoadScene(2);//load scene 2 which is win scene
+            if(plushiesCollected == plushiesNeedToWIn) SceneManager.LoadScene(2);//load scene 2 which is win scene
             
             Monster.BaseSpeed++; // Increase monster speed when plushie is collected
         }

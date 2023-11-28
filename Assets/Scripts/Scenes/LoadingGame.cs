@@ -18,6 +18,14 @@ public class LoadingGame : MonoBehaviour
     private Image backgroundImage;
     [SerializeField]
     private Sprite backgroundImageLoadVersion;
+
+    private void Start()
+    {
+        Cursor.lockState = CursorLockMode.None;
+        Cursor.visible = true;
+    }
+
+
     public void LoadGameScene()
     {
         StartCoroutine(loadAsycScene());

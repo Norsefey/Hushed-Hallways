@@ -124,7 +124,7 @@ MonoBehaviour:
     value: 93
   tint:
     overrideState: 0
-    value: -10.6
+    value: -38.3
   colorFilter:
     overrideState: 0
     value: {r: 1, g: 1, b: 1, a: 1}
@@ -138,8 +138,8 @@ MonoBehaviour:
     overrideState: 0
     value: 0
   postExposure:
-    overrideState: 0
-    value: 0
+    overrideState: 1
+    value: 0.53
   contrast:
     overrideState: 0
     value: 0

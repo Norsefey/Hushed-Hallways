@@ -6,8 +6,11 @@ public class FlashLight : MonoBehaviour
 {//player can turn their flashlight on and off
     [SerializeField]//refrence to flashlight
     private GameObject flashlight;
-
+    [SerializeField]
+    private Light light;
     private bool flashOn = true;
+
+    public float lightMultiplier = 1.0f;
   
     // Update is called once per frame
     void Update()
@@ -26,5 +29,22 @@ public class FlashLight : MonoBehaviour
             }
             
         }
+
+        if(Input.mouseScrollDelta.y != 0)
+        {
+            light.spotAngle += Input.mouseScrollDelta.y * lightMultiplier;
+
+            light.spotAngle = Mathf.Clamp(light.spotAngle, 25, 60);
+
+
+            if (light.spotAngle <= 30)
+                light.intensity = 1.5f;
+            else if (light.spotAngle >= 50)
+                light.intensity = .5f;
+            else
+                light.intensity = 1f;
+        }
+       
+
     }
 }
