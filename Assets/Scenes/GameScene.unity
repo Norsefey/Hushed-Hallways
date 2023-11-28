@@ -366,6 +366,62 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[2].hallway
+      value: 
+      objectReference: {fileID: 2910060684686589215, guid: 46dda7cb026620643ac23b4ed553be59, type: 3}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[3].hallway
+      value: 
+      objectReference: {fileID: 2910060684686589215, guid: 46dda7cb026620643ac23b4ed553be59, type: 3}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[1].maxPos.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[2].maxPos.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[2].maxPos.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[2].minPos.x
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[2].minPos.y
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[3].maxPos.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[3].maxPos.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[3].minPos.x
+      value: 8
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[3].minPos.y
+      value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[2].alwaysSpawn
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[3].alwaysSpawn
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
