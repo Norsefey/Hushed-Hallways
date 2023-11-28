@@ -11,8 +11,8 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private TextMeshProUGUI Plushies;
     [Header("Menu")]
     [SerializeField] private GameObject MenuHolder = null;
-    [SerializeField] private Button RestartButton;
-    private TextMeshProUGUI RestartButtonText;
+    //[SerializeField] private Button RestartButton;
+    //private TextMeshProUGUI RestartButtonText;
     [SerializeField] private Button QuitButton;
     private TextMeshProUGUI QuitButtonText;
     [Header("Player")]
@@ -20,17 +20,17 @@ public class PauseMenu : MonoBehaviour
     private void Awake()
     {
         // Add listeners to the buttons
-        RestartButton.onClick.AddListener(() => { Restart(); });
+        //RestartButton.onClick.AddListener(() => { Restart(); });
         QuitButton.onClick.AddListener(() => { Quit(); });
         // Grab their text components
-        RestartButtonText = RestartButton.GetComponentInChildren<TextMeshProUGUI>();
+        //RestartButtonText = RestartButton.GetComponentInChildren<TextMeshProUGUI>();
         QuitButtonText = QuitButton.GetComponentInChildren<TextMeshProUGUI>();
     }
     private void Start()
     {
         DoPause(); // Re-enable everything
         // Reset the text
-        RestartButtonText.text = "Restart";
+        //RestartButtonText.text = "Restart";
         QuitButtonText.text = "Quit";
     }
     private void Update()
@@ -49,13 +49,13 @@ public class PauseMenu : MonoBehaviour
         MenuHolder.SetActive(IsPaused); // Show or hide the menu
         Cursor.lockState = IsPaused ? CursorLockMode.None : CursorLockMode.Locked; // Show or hide the cursor
     }
-    private void Restart()
+    /*private void Restart()
     {
         // Reload the scene
         Debug.Log("Restarting game");
         RestartButtonText.text = "Restarting...";
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+    }*/
     private void Quit()
     {
         // Quit the game
