@@ -1,6 +1,6 @@
 using UnityEngine;
 /// <summary>
-/// Patrolling behaviour, moves to a new node, waits, then exits state
+/// Patrolling behavior, moves to a new node, waits, then exits state
 /// </summary>
 public class StatePatrol : State
 {
