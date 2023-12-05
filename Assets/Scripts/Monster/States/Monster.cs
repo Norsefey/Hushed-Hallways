@@ -30,9 +30,16 @@ public class Monster : MonoBehaviour
     }
     private void Update()
     {
+       /* if (CurrentState != null) CurrentState.UpdateState();
+        else ChangeState(GetComponent<StateIdle>());*/
+    }
+
+    private void FixedUpdate()
+    {
         if (CurrentState != null) CurrentState.UpdateState();
         else ChangeState(GetComponent<StateIdle>());
     }
+
     private void OnTriggerEnter(Collider other)
     {
         // If player enters sensing range, chase

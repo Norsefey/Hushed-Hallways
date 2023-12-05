@@ -4899,7 +4899,7 @@ NavMeshAgent:
   m_AutoBraking: 1
   m_AutoRepath: 1
   m_Height: 2
-  m_BaseOffset: 0
+  m_BaseOffset: 1
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
 --- !u!114 &5221252186353594199
@@ -5026,7 +5026,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e2d33dd6c2a7d474b87c1678556d25e8, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.1
+      value: -1
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: e2d33dd6c2a7d474b87c1678556d25e8, type: 3}
       propertyPath: m_LocalPosition.z

@@ -39,9 +39,10 @@ public class StateChase : State
             ExitState();
         }
     }
+
     IEnumerator ChaseTimerCoroutine()
     {
-        //Debug.Log("Monster while give up in " + ChaseTimer + " seconds");
+        Debug.Log("Monster while give up in " + ChaseTimer + " seconds");
         // Wait for timer to expire
         yield return new WaitForSeconds(ChaseTimer);
         //Debug.Log("Giving up chase");

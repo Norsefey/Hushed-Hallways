@@ -108,7 +108,7 @@ public class HallwayGenerator : MonoBehaviour
             }
         }
 
-        foreach (NavMeshSurface surface in newHalls) surface.BuildNavMesh(); // Bake all the NavMeshSurfaces
+        //foreach (NavMeshSurface surface in newHalls) surface.BuildNavMesh(); // Bake all the NavMeshSurfaces
         Debug.Log("NavMesh baked");
 
         //Spawn player after navemesh bake, so monster can track it
