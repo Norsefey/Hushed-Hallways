@@ -14,7 +14,6 @@ public class HallwayGenerator : MonoBehaviour
     public class Cell
     {
         public bool visited = false;
-
         public bool[] openDirections = new bool[4]; // 0-Up 1-Down 2-Right 3-Left
     }
 
@@ -39,7 +38,6 @@ public class HallwayGenerator : MonoBehaviour
                 }
                 else if(!alwaysSpawn)
                     return 1;
-
             }
             return 0;
         }
@@ -59,12 +57,6 @@ public class HallwayGenerator : MonoBehaviour
         MazeGenerator();
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
     void GenerateHalls()
     {
 
@@ -74,7 +66,7 @@ public class HallwayGenerator : MonoBehaviour
             {
                 Cell currentCell = board[Mathf.FloorToInt(x + y * size.x)];
                
-                   int index = -1;//index that deceides what hallway to spawn in
+                   int index = -1;//index that decides what hallway to spawn in
                    List<int> avaibleHallways = new List<int>();//will hold all types hallways that can spawn at this location
                     
                     for(int h = 0; h < hallways.Length; h++)
@@ -86,7 +78,7 @@ public class HallwayGenerator : MonoBehaviour
                             index = h;
                             hallways[index].spawnedIn = true;
                             break;
-                        }else if(p == 1)//doesnt have to spawn but can...if you want too
+                        }else if(p == 1)//doesn't have to spawn but can...if you want too
                         {
                             avaibleHallways.Add(h);
                         }
@@ -108,24 +100,16 @@ public class HallwayGenerator : MonoBehaviour
 
                var newHall = Instantiate(hallways[index].hallway, new Vector3(x * offset.x, 0, -y * offset.y), Quaternion.identity, transform).GetComponent<HallManager>();
                 
-                newHall.UpdateWalls(currentCell.openDirections);
+               newHall.UpdateWalls(currentCell.openDirections);
 
-                newHalls.Add(newHall.ShareMyNavmesh());
+               newHalls.Add(newHall.ShareMyNavmesh());
 
                newHall.name += ": " + x + "x " + y + "y";
-                    
-                 
-          
-
             }
         }
 
-	Debug.Log("Baking NavMesh...");
         foreach (NavMeshSurface surface in newHalls) surface.BuildNavMesh(); // Bake all the NavMeshSurfaces
         Debug.Log("NavMesh baked");
-
-	Debug.Log("Activating plushies"
-	foreach (GameObject p in Plushies) p.SetActive(true);
 
         //Spawn player after navemesh bake, so monster can track it
         Instantiate(player, Vector3.zero, Quaternion.identity);
@@ -155,16 +139,10 @@ public class HallwayGenerator : MonoBehaviour
 
             board[currentCell].visited = true;
 
-            /*if (currentCell == board.Count - 1)//helps with runtime//adds more interesting shape to maze
-            {
-                break;
-            }*/
-
-
             //check Neighbors
             List<int> neighbors = CheckNeighbors(currentCell);
 
-            if(neighbors.Count == 0)//no avaible neighbors so check the current path
+            if(neighbors.Count == 0)//no available neighbors so check the current path
             {
                 if(path.Count == 0)
                 {
