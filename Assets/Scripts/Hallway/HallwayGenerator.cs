@@ -120,14 +120,16 @@ public class HallwayGenerator : MonoBehaviour
             }
         }
 
-        foreach (NavMeshSurface surface in newHalls) surface.BuildNavMesh();
+	Debug.Log("Baking NavMesh...");
+        foreach (NavMeshSurface surface in newHalls) surface.BuildNavMesh(); // Bake all the NavMeshSurfaces
+        Debug.Log("NavMesh baked");
+
+	Debug.Log("Activating plushies"
+	foreach (GameObject p in Plushies) p.SetActive(true);
 
         //Spawn player after navemesh bake, so monster can track it
         Instantiate(player, Vector3.zero, Quaternion.identity);
 
-
-        // Call Leeman's baking script
-        //BakeNavMesh.Bake();
     }
 
     void MazeGenerator()
