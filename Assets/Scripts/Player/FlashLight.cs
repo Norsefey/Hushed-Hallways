@@ -4,18 +4,27 @@ using UnityEngine;
 
 public class FlashLight : MonoBehaviour
 {//player can turn their flashlight on and off
-    [SerializeField]//refrence to flashlight
+    [Header("References")]
+    [SerializeField]//reference to flashlight
     private GameObject flashlight;
     [SerializeField]
-    private Light light;
+    private Light raysOfDelight;
     private bool flashOn = true;
 
-    public float lightMultiplier = 1.0f;
-  
+    [Header("Light Intensity")]
+    public float defaultIntensity = 1;
+    public float minIntensity = .5f;
+    public float maxIntensity = 1.5f;
+
+    [Header("Light Angle")]
+    public float maxAngle = 60f;
+    public float minAngle = 25f;
+
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Q) && flashlight != null)//when player inputs flash light with turn off or on depending if it on/off
+        //when player inputs flashlight with turn off or on depending if it is on/off
+        if (Input.GetKeyDown(KeyCode.Q) && flashlight != null)
         {
             if (flashOn)
             {
@@ -27,24 +36,21 @@ public class FlashLight : MonoBehaviour
                 flashlight.SetActive(true);
                 flashOn = true;
             }
-            
         }
 
         if(Input.mouseScrollDelta.y != 0)
         {
-            light.spotAngle += Input.mouseScrollDelta.y * lightMultiplier;
+            //use scroll wheel to change angle of light
+            raysOfDelight.spotAngle += Input.mouseScrollDelta.y;
+            raysOfDelight.spotAngle = Mathf.Clamp(raysOfDelight.spotAngle, minAngle, maxAngle);
 
-            light.spotAngle = Mathf.Clamp(light.spotAngle, 25, 60);
-
-
-            if (light.spotAngle <= 30)
-                light.intensity = 1.5f;
-            else if (light.spotAngle >= 50)
-                light.intensity = .5f;
+            //depending on the angle of the light, change the intensity
+            if (raysOfDelight.spotAngle <= 30)
+                raysOfDelight.intensity = maxIntensity;
+            else if (raysOfDelight.spotAngle >= 50)
+                raysOfDelight.intensity = minIntensity;
             else
-                light.intensity = 1f;
+                raysOfDelight.intensity = defaultIntensity;
         }
-       
-
     }
 }
