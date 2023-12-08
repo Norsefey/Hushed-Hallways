@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4473245851385874414}
-  - component: {fileID: 2294648636386804650}
   - component: {fileID: 1159872200365402724}
   - component: {fileID: 8454183622009936657}
   m_Layer: 0
@@ -36,25 +35,6 @@ Transform:
   - {fileID: 3418228230030717295}
   m_Father: {fileID: 8641060574883326811}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &2294648636386804650
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4150677624435608}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff1aef53c35cd443a5f74128db08434, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoints:
-  - {fileID: 8517628965915008970}
-  - {fileID: 1964549356238223574}
-  - {fileID: 3890212660838717996}
-  decor:
-  - {fileID: 2279444928230539139, guid: aadc83940b300a845b4eaabcbc022d3a, type: 3}
-  - {fileID: 2279444928230539139, guid: f1d1ee4f54db58a49a2e855fdb9ed170, type: 3}
 --- !u!65 &1159872200365402724
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -197,7 +177,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1681663290213179816}
-  - component: {fileID: 5182645080355150265}
   - component: {fileID: 3078908956060195285}
   - component: {fileID: 1427499939757106586}
   - component: {fileID: 6573656284221394072}
@@ -225,25 +204,6 @@ Transform:
   - {fileID: 3511552242255280480}
   m_Father: {fileID: 8641060574883326811}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &5182645080355150265
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1333963417328481591}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff1aef53c35cd443a5f74128db08434, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoints:
-  - {fileID: 8604264524618488395}
-  - {fileID: 6313504520400316755}
-  - {fileID: 2182619978350397925}
-  decor:
-  - {fileID: 2279444928230539139, guid: aadc83940b300a845b4eaabcbc022d3a, type: 3}
-  - {fileID: 2279444928230539139, guid: f1d1ee4f54db58a49a2e855fdb9ed170, type: 3}
 --- !u!65 &3078908956060195285
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -632,7 +592,6 @@ GameObject:
   m_Component:
   - component: {fileID: 7441699130915830445}
   - component: {fileID: 1412365463655719341}
-  - component: {fileID: 7187522910654952661}
   - component: {fileID: 4905442493995413993}
   - component: {fileID: 5741293609178527799}
   m_Layer: 0
@@ -671,25 +630,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a5988b7f8f33f674d9e61fc3c281cd7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &7187522910654952661
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3917792948849886106}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff1aef53c35cd443a5f74128db08434, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoints:
-  - {fileID: 3424172774637114232}
-  - {fileID: 6423471379458190712}
-  - {fileID: 2967204018663595054}
-  decor:
-  - {fileID: 2279444928230539139, guid: aadc83940b300a845b4eaabcbc022d3a, type: 3}
-  - {fileID: 2279444928230539139, guid: f1d1ee4f54db58a49a2e855fdb9ed170, type: 3}
 --- !u!65 &4905442493995413993
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -801,7 +741,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4878155040563436695}
-  - component: {fileID: 4334034207287047110}
   - component: {fileID: 2809032059024145052}
   - component: {fileID: 7005562703815803385}
   m_Layer: 0
@@ -828,25 +767,6 @@ Transform:
   - {fileID: 3688702439586913503}
   m_Father: {fileID: 8641060574883326811}
   m_LocalEulerAnglesHint: {x: 0, y: 90, z: 0}
---- !u!114 &4334034207287047110
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5196252382034106382}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6ff1aef53c35cd443a5f74128db08434, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  spawnPoints:
-  - {fileID: 4440022570578105672}
-  - {fileID: 6342249694548754467}
-  - {fileID: 8566132751539170109}
-  decor:
-  - {fileID: 2279444928230539139, guid: aadc83940b300a845b4eaabcbc022d3a, type: 3}
-  - {fileID: 2279444928230539139, guid: f1d1ee4f54db58a49a2e855fdb9ed170, type: 3}
 --- !u!65 &2809032059024145052
 BoxCollider:
   m_ObjectHideFlags: 0
