@@ -542,15 +542,19 @@ PrefabInstance:
       objectReference: {fileID: 2910060684686589215, guid: 46dda7cb026620643ac23b4ed553be59, type: 3}
     - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
       propertyPath: hallways.Array.data[1].maxPos.x
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
       propertyPath: hallways.Array.data[1].maxPos.y
-      value: 2
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
       propertyPath: hallways.Array.data[1].minPos.x
-      value: 2
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
+      propertyPath: hallways.Array.data[1].minPos.y
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
       propertyPath: hallways.Array.data[2].maxPos.x
@@ -566,7 +570,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
       propertyPath: hallways.Array.data[2].minPos.y
-      value: 5
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 7371978131244282173, guid: 1b1a413ecbb4c214ba73680b78d53ce4, type: 3}
       propertyPath: hallways.Array.data[3].maxPos.x
