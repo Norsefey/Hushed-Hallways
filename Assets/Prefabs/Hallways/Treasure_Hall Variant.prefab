@@ -47,6 +47,8 @@ MonoBehaviour:
   plushies:
   - {fileID: 4114881221731482783, guid: e77e228f15f641448a0aa39d66e8200e, type: 3}
   - {fileID: 5847217012611568812, guid: 066d6608280bd194eadb5915a9b1a00c, type: 3}
+  - {fileID: 5847217012611568812, guid: c6e8e39f684cf414689354ba91d97020, type: 3}
+  - {fileID: 5847217012611568812, guid: df12fe03f82d4e440987c1ff211b0e4c, type: 3}
 --- !u!1001 &4355316327803391898
 PrefabInstance:
   m_ObjectHideFlags: 0
