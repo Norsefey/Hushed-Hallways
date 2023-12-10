@@ -61,7 +61,8 @@ public class PauseMenu : MonoBehaviour
         // Quit the game
         Debug.Log("Quitting game");
         QuitButtonText.text = "Quitting...";
-        Application.Quit();
+        //Application.Quit();
+        SceneManager.LoadScene(0);
     }
     private void UpdateUI()
     {
